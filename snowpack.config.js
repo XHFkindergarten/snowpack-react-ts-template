@@ -1,7 +1,7 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   // 项目根路径
-  root: 'src',
+  root: './',
   // 子模块根路径，将会被作为资源文件进行处理
   // workspaceRoot: '',
   // 集成一个基础配置，进行 merge
@@ -35,6 +35,7 @@ module.exports = {
   },
   // 插件（遵循 babel-plugin 语法规则）
   plugins: [
+    '@snowpack/plugin-webpack',
     '@snowpack/plugin-sass',
     ['@snowpack/plugin-react-refresh', {}],
     // '@snowpack/plugin-dotenv'
