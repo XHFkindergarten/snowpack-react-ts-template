@@ -1,3 +1,10 @@
 .snowpack
 build
 node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+yarn.lock
+yarn-error.log
+package-lock.json
